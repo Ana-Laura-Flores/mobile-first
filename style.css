@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    background-color: #EAC926;
+    height: 100vh;
+}.encabezado{
+    height: 180px;
+    
+}
+.logo{
+    width: 100%;
+}
+.logo-img{
+    width: 30%;
+    min-width: 200px;
+    padding: 30px 30px;
+}
+.busqueda, .fa-search{
+    border: solid 1px gray;
+    background-color: white;
+    display: inline;
+    padding: 5px;
+    margin: 5px;
+}
+.descrip-cuotas{
+    text-align: center;
+    width: 100%;
+}
+.descrip-cuotas-p, .fa-hand-holding-usd{
+    width: 100%;
+    font-size: 16px;
+    display: inline;
+}
+.nav-1, .nav-2{
+    margin: 20px;
+    list-style: none;
+}
+.burger-menu{
+    background-color: #03264C;
+    border-radius: 5px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    align-self: center;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+}
+.fa-bars{
+    padding: 11px;
+    display: flex;
+    font-size: 30px;
+}
+.item-menu{
+    text-decoration: none;
+    color: black;
+}
+.precio {
+    font-size: 18px;
+}
+.descuento, .producto{
+    font-size: 16px;
+}
+.precio, .producto{
+    color: #666;
+}
+.descuento{
+    color: #39b54a;
+}
+.producto{
+    margin-top: 20px;
+}
+.fa-credit-card, .fa-gift, .fa-user-shield {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.productos{
+    background-color: #ebebeb;
+}
+.basado-ultima-visita, .ofertas{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;  
+    justify-content: center;  
+}
+.items{
+    margin: 10px;
+    width: 45%;
+    height: 450px;
+    min-width: 200px;
+    
+}
+.img-items{
+    width: 100%;
+    height: 300px;
+    background-color: white;
+}
+img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.container-description{
+    border-top: solid 1px #ebebeb;
+    background-color: white;
+    padding: 15px;
+}
+.fa-truck{
+    color: #39b54a;
+    border:#39b54a solid 1px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding-top: 8px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color:  #666;
+    margin-bottom: 20px;
+}
+.pago, .envios, .seguridad{
+    width: 300px;
+    align-self: center;
+    margin: 30px;
+}
+h3{
+    font-size: 18px;
+}
+p{
+    font-size: 14px;
+}
