@@ -15,19 +15,16 @@ header{
     display: flex;
 }
 .logo{
-    width: 50%;
+    width: 50vw;
     justify-content: flex-start;
 }
 .logo-img{
     width: 100%;
     min-width: 200px;
-    padding: 20px 20px;
+    padding: 10px 10px;
 }
 .menu-busqueda{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 10px;
+    
 
 }
 .descrip-cuotas{
@@ -40,10 +37,7 @@ header{
 .fa-hand-holding-usd{
     width: 5%;
 }
-.descrip-cuotas{
-    display: flex;
-    width: 100vw;
-}
+
 .descrip-cuotas-p {
     width: 100%;
     font-size: 1rem;
@@ -54,7 +48,8 @@ header{
 .busqueda{
     display: flex;
     width: 80%;
-   justify-content: flex-end;
+    justify-content: flex-end;
+    margin-right: 10px;
 }
 .barra-busqueda{
     width: 60%;
@@ -63,6 +58,7 @@ header{
     display: flex;
     background-color: white;
     border-radius: 5px;
+    border: none;
     padding: 5px;
     margin: 5px;
     align-self:center;
@@ -75,7 +71,7 @@ header{
 nav{
     display: flex;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
     
 }
 
@@ -109,9 +105,11 @@ nav{
 .banner img{
     /* background-image: url(./img/img-home-banner.jpg); */
     width: 100%;
+   
+}
+.banner{
     height: auto;
 }
-
 /* fin de banner */
 
 .fa-bars{
@@ -124,6 +122,8 @@ nav{
     color: black;
     padding: 5px;
 }
+
+/* main */
 .precio {
     font-size: 18px;
     margin-right: 20px;
@@ -204,6 +204,12 @@ img{
     justify-content: flex-end;
     
 }
+
+
+hr{
+    margin: 10px 0;
+}
+
 footer{
     display: flex;
     flex-direction: column;
@@ -234,6 +240,7 @@ p{
         flex-direction: row;
     }
     
+    
 }
 
 /* media query destokp */
@@ -249,11 +256,29 @@ p{
 
 /* media query tablet */
 @media screen and (min-width:769px){
-   .burger-menu{
+    
+    .encabezado{
+        display: flex;
+        width: 100vw;
+    }
+    .logo-barra{
+        width: 60vw;
+    }
+    .descrip-cuotas{
+        display: flex;
+        justify-content: flex-end;
+        width: 40vw;
+        margin-right: 30px;
+    }
+    .descrip-cuotas-p{
+        justify-content: flex-end;
+    }
+    .burger-menu{
        display: none;
    }
    nav{
     display: flex;
+    padding: 0 30px;
 }
 .items{
     margin: 10px;
