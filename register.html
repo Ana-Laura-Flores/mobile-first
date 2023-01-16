@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- links -->
+     <link rel="stylesheet" href="style.css">
+     <!-- script -->
+     <script src="https://kit.fontawesome.com/a47af75b49.js" crossorigin="anonymous"></script>
+    <title>Registro</title>
+</head>
+<body class="body-register">
+    <main class="main-register">
+        <form action="register.html" method="POST" enctype="multipart/form-data" class="form-register">
+            <fieldset class="datosPersonales">
+                <legend>Datos personales</legend>
+                <label for="nombre">Nombre y Apellido
+                    <input type="text" name="name" required>
+                </label>
+                <label for="nombreDeUsuario">Nombre de Usuario
+                    <input type="text" name="nombreDeUsuario" required>
+                </label>
+                <label for="fechaDeNacimiento">Fecha de fechaDeNacimiento
+                    <input type="date" name="fechaDeNacimiento" id="">
+                </label>
+                <label for="direccion">Domicilio
+                    <input type="text" name="direccion">
+                </label>
+            </fieldset>
+            <fieldset class="PerfilUsuario">
+                <legend>Perfil</legend>
+            <label for="perfil" class="perfil">Que quieres hacer?
+                <div class="opciones">
+                <input type="radio" name="perfil" id="perfil" checked>Comprar
+                <input type="radio" name="perfil" id="perfil">Vender
+            </div>
+            </label>
+            <label for="categorias">
+                <legend>Categoría de Interes (puedes elegir varias opciones)</legend>
+                <div class="opciones-interes">
+                    <input type="checkbox" name="interes" id="interes">Electro
+                    <input type="checkbox" name="interes" id="interes">Moda
+                    <input type="checkbox" name="interes" id="interes">Hogar
+                    <input type="checkbox" name="interes" id="interes">Juguetería
+                    <input type="checkbox" name="interes" id="interes">Vida Sana
+                </div>
+            </label>
+        </fieldset>
+        <div class="otros-datos">
+            <label for="fotoUsuario">Carga tu imagen de usuario
+            <input type="file" name="fotoUsuario" id="fotoUsuario" required>
+            </label>
+            <input type="password" name="pass" id=""> <p> Contraseña</p>
+            <input type="password" name="pass" id=""> <p> Confirma tu contraseña </p>
+        </div>
+
+        <a href="index.html"><input class="enviar-register" type="button" value="Enviar"></a>
+
+        <input class="limpiar-register" type="reset" value="Limpiar Formulario">
+
+        </form>
+    </main>
+</body>
+</html>

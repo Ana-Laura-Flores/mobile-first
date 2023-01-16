@@ -222,12 +222,139 @@ footer{
     align-self: center;
     margin: 30px;
 }
+.pago i, .envios i, .seguridad i{
+    color: #1259c3;
+}
 h3{
     font-size: 18px;
 }
 p{
     font-size: 14px;
 }
+
+
+/* estilos de login.html */
+/* formulario */
+.main-login{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    justify-content: center;
+    background-color: #ebebeb;
+}
+.form-login{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.label-login{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    color: #666;
+}
+.input-login,
+.button-login{
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    margin: 10px 0;
+}
+.button-login{
+    background-color: #1259c3;
+    width: 100%;
+    color: white;
+    margin-top: 30px;
+}
+
+/* estilos formulario de registro */
+.body-register{
+    background-color: #ebebeb;
+}
+.main-register{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+.form-register{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 70%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    align-self: center;
+}
+fieldset,
+.otros-datos{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 25px;
+    background-color: #ebebeb;
+    border: none;
+}
+legend{
+    
+}
+label{
+    font-weight: 300;
+    font-size: 16px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+input{
+    width: 70%;
+    margin: 10px 0;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 20px;
+    font-weight: 300;
+    font-size: 16px;
+    
+}
+.opciones,
+.opciones-interes{
+    display: flex;
+    width: 50%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.opciones-interes{
+    width: 80%;
+}
+#perfil,
+#interes{
+    width: 20px;
+    padding: 20px 0;
+   
+}
+
+#fotoUsuario{
+    padding: 0;
+}
+
+.enviar-register,
+.limpiar-register{
+    font-weight: 500;
+    font-size: 18px;
+    width: 25%;
+    padding: 0;
+    height: 40px;
+    background-color: #1259c3;
+    color: white;
+}
+
 
 @media (min-width: 361px){
     .producto{
@@ -259,7 +386,7 @@ p{
     
     .encabezado{
         display: flex;
-        width: 100vw;
+        width: 100%;
     }
     .logo-barra{
         width: 60vw;
