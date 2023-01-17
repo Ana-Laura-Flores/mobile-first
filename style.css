@@ -23,21 +23,15 @@ header{
     min-width: 200px;
     padding: 10px 10px;
 }
-.menu-busqueda{
-    
-
-}
 .descrip-cuotas{
     display: flex;
     justify-content: center;
     width: 100%;
     padding: 10px;
-    
 }
 .fa-hand-holding-usd{
     width: 5%;
 }
-
 .descrip-cuotas-p {
     width: 100%;
     font-size: 1rem;
@@ -276,6 +270,7 @@ p{
     display: flex;
     justify-content: center;
     margin: 30px;
+    width: 90%;
 }
 .form-register{
     display: flex;
@@ -283,21 +278,25 @@ p{
     flex-wrap: wrap;
     width: 70%;
     background-color: white;
-    padding: 30px;
+    padding: 25px 20px;
     border-radius: 20px;
     align-self: center;
+    height: auto;
 }
 fieldset,
 .otros-datos{
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-    padding: 40px;
+    padding: 35px;
     border-radius: 10px;
     font-weight: 500;
     font-size: 25px;
     background-color: #ebebeb;
     border: none;
+    width: 90%;
+    align-self: center;
+    height: auto;
 }
 legend{
     
@@ -319,20 +318,15 @@ input{
     padding-left: 20px;
     font-weight: 300;
     font-size: 16px;
+    display: flex;
     
 }
-.opciones,
-.opciones-interes{
-    display: flex;
-    width: 50%;
-    height: 50px;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 0;
+.datos-title,
+.perfil-title{
+    font-weight: 500;
+    font-size: 25px;
 }
-.opciones-interes{
-    width: 80%;
-}
+
 #perfil,
 #interes{
     width: 20px;
@@ -347,19 +341,19 @@ input{
 .enviar-register,
 .limpiar-register{
     font-weight: 500;
-    font-size: 18px;
-    width: 25%;
+    font-size: 16px;
+    justify-content: center;
+    width: 55%;
     padding: 0;
     height: 40px;
     background-color: #1259c3;
     color: white;
+    margin: 20px;
 }
 
 
 @media (min-width: 361px){
-    .producto{
-        display:flex;
-    }
+    
     .items{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
@@ -391,6 +385,7 @@ input{
     .logo-barra{
         width: 60vw;
     }
+    
     .descrip-cuotas{
         display: flex;
         justify-content: flex-end;
@@ -413,6 +408,9 @@ input{
     height: auto;
     min-width: 250px;
     
+}
+.producto{
+    display:flex;
 }
 }
 

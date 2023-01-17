@@ -11,48 +11,84 @@
     <title>Registro</title>
 </head>
 <body class="body-register">
+    <header>
+        <section class="encabezado">
+            <section class="logo-barra">
+                <div class="logo">
+                    <img src="./img/logo-mercado-liebre.svg" class="logo-img" alt="manos estrechandose mercado liebre">
+                </div>
+                <div class="busqueda">
+                    <input type="search" name="BusquedaProductos" placeholder="Busqueda de productos" class="barra-busqueda">
+                    <i class="fas fa-search"></i>
+                </div>
+            </section>
+                <div class="descrip-cuotas"> 
+                    <p class="descrip-cuotas-p"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
+                </div>
+        </section>
+        
+        
+        <nav>
+            <ul class="nav-1">
+                <li><a href="" class="item-menu"> Ofertas</a></li>
+                <li><a href="" class="item-menu">Tiendas Oficiales</a></li>
+                <li><a href="" class="item-menu">Vender</a></li>
+                <li><a href="" class="item-menu">Ayuda</a></li>
+            </ul>
+            <ul class="nav-2">
+                <li><a href="./register.html" class="item-menu">Crea tu cuenta <i class="far fa-address-card"></i> </a></li>
+                <li><a href="./login.html" class="item-menu">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="" class="item-menu">Mis Compras <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
     <main class="main-register">
         <form action="register.html" method="POST" enctype="multipart/form-data" class="form-register">
             <fieldset class="datosPersonales">
-                <legend>Datos personales</legend>
+                <!-- <legend></legend> -->
+                <label class="datos-title" for="">Datos personales</label>
                 <label for="nombre">Nombre y Apellido
                     <input type="text" name="name" required>
                 </label>
                 <label for="nombreDeUsuario">Nombre de Usuario
                     <input type="text" name="nombreDeUsuario" required>
                 </label>
-                <label for="fechaDeNacimiento">Fecha de fechaDeNacimiento
-                    <input type="date" name="fechaDeNacimiento" id="">
+                <label for="fechaDeNacimiento">Fecha de Nacimiento
+                    <input type="date" name="fechaDeNacimiento" id="" required>
                 </label>
                 <label for="direccion">Domicilio
-                    <input type="text" name="direccion">
+                    <input type="text" name="direccion" required>
                 </label>
             </fieldset>
             <fieldset class="PerfilUsuario">
-                <legend>Perfil</legend>
-            <label for="perfil" class="perfil">Que quieres hacer?
-                <div class="opciones">
-                <input type="radio" name="perfil" id="perfil" checked>Comprar
-                <input type="radio" name="perfil" id="perfil">Vender
-            </div>
+                <!-- <legend>Perfil</legend> -->
+                <label for="perfil" class="perfil-title">Perfil</label>
+                <label for="perfil" class="perfil">Que quieres hacer?
+               
+                    <input type="radio" name="perfil" id="perfil" checked>Comprar
+                    <input type="radio" name="perfil" id="perfil">Vender
+               
             </label>
-            <label for="categorias">
-                <legend>Categoría de Interes (puedes elegir varias opciones)</legend>
-                <div class="opciones-interes">
+            <label for="categorias" class="perfil">Categoría de Interes (puedes elegir varias opciones)
+                <!-- <legend>Categoría de Interes (puedes elegir varias opciones)</legend> -->
+               
                     <input type="checkbox" name="interes" id="interes">Electro
                     <input type="checkbox" name="interes" id="interes">Moda
                     <input type="checkbox" name="interes" id="interes">Hogar
                     <input type="checkbox" name="interes" id="interes">Juguetería
                     <input type="checkbox" name="interes" id="interes">Vida Sana
-                </div>
+               
             </label>
         </fieldset>
         <div class="otros-datos">
             <label for="fotoUsuario">Carga tu imagen de usuario
             <input type="file" name="fotoUsuario" id="fotoUsuario" required>
             </label>
-            <input type="password" name="pass" id=""> <p> Contraseña</p>
-            <input type="password" name="pass" id=""> <p> Confirma tu contraseña </p>
+            <input type="password" name="pass" id="" required> <p> Contraseña</p>
+            <input type="password" name="pass" id="" required> <p> Confirma tu contraseña </p>
         </div>
 
         <a href="index.html"><input class="enviar-register" type="button" value="Enviar"></a>
