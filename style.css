@@ -31,6 +31,7 @@ header{
 }
 .fa-hand-holding-usd{
     width: 5%;
+    padding: 0 30px 0 0;
 }
 .descrip-cuotas-p {
     width: 100%;
@@ -204,12 +205,20 @@ hr{
     margin: 10px 0;
 }
 
+/*  fin del main */
+
+/* comienzo de footer */
 footer{
     display: flex;
     flex-direction: column;
     text-align: center;
     color:  #666;
     margin-bottom: 20px;
+}
+.container-description-footer{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
 }
 .pago, .envios, .seguridad{
     width: 70%;
@@ -227,8 +236,9 @@ p{
 }
 
 
-/* estilos de login.html */
+
 /* formulario */
+/* estilos de login.html */
 .main-login{
     display: flex;
     width: 100%;
@@ -237,7 +247,7 @@ p{
     background-color: #ebebeb;
 }
 .form-login{
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -257,9 +267,12 @@ p{
 }
 .button-login{
     background-color: #1259c3;
-    width: 100%;
+    width: 70%;
     color: white;
     margin-top: 30px;
+}
+.button-login:hover{
+    background-color: #0022AA;
 }
 
 /* estilos formulario de registro */
@@ -354,9 +367,9 @@ input{
 
 @media (min-width: 361px){
     
-    .items{
+    /* .items{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
+    } */
     .basado-ultima-visita, .ofertas{
         flex-direction: row;
     }
@@ -364,7 +377,7 @@ input{
     
 }
 
-/* media query destokp */
+
 
 /* @media screen and (min-width:1200px){
     .burger-menu{
@@ -375,7 +388,7 @@ input{
     }
 } */
 
-/* media query tablet */
+/* media query destokp */
 @media screen and (min-width:769px){
     
     .encabezado{
@@ -402,18 +415,37 @@ input{
     display: flex;
     padding: 0 30px;
 }
-.items{
+    .items{
     margin: 10px;
     width: 20%;
     height: auto;
     min-width: 250px;
-    
 }
-.producto{
-    display:flex;
+    .producto{
+    display:none;
 }
+    .container-description-footer{
+    display: flex;
+    width: 90%;
+    align-self: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+    .container-description:hover .producto{
+    display: flex;
+}
+    .fa-truck{
+    transition: all 3s;
+}
+    .fa-truck:hover {
+    transform: rotate(1turn);
+}
+    .items:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
+}
+/* media query tablet */
 @media screen and (min-width:465px){
     .burger-menu{
         display: none;
@@ -425,37 +457,7 @@ input{
         display: flex;
         
     }
+    
  }
 
 
-
-
-/* @media(min-width:770px){
-    .items{
-        margin: 10px;
-        width: 20%;
-        height: auto;
-        min-width: 320px;
-        
-    }
-}
-@media (min-width: 769px){
-    .nav-1, .nav-2{
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .nav-1 li, .nav-2 li{
-        padding: 10px;
-    }
-    .nav-2{
-        justify-content: flex-end;
-    }
-    .burger-menu{
-        display:none ;
-    }
-    .basado-ultima-visita, .ofertas{
-        flex-direction: row;
-    }
-    
-} */
